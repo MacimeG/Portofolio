@@ -1,4 +1,4 @@
-const NOM = document.querySelector('#Nom');
+const NOM = document.querySelector('#metier');
 
 
 
@@ -10,12 +10,10 @@ const typewriter = new Typewriter(NOM, {
 typewriter
   .changeDelay(50)
   .pauseFor(2500)
-  .typeString('Glaneux Maxime <br>')
+  .typeString('Développeur wec<br>')
   .pauseFor(20)
-  .typeString('Développeur web')
+  .deleteChars(3)
+  .typeString('web et web <strong>mobile</strong> <br>')
   .pauseFor(10)
-  .deleteChars(2)
-  .typeString('eb et web <strong>mobile</strong> <br>')
-  .pauseFor(30)
   .typeString("Front-End/Back-End")
   .start();
